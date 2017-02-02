@@ -1,0 +1,43 @@
+
+git add . adds all modified and new (untracked) files in the current directory and all subdirectories to the staging area (a.k.a. the index), thus preparing them to be included in the next git commit
+
+
+
+
+
+
+
+
+
+ls
+pwd
+cd
+cd ..
+clear
+
+
+
+
+
+    What is git remote add ...
+
+    As you probably know, git is a distributed version control system. Most operations are done locally. To communicate with the outside world, git uses what are called remotes. These are repositories other than the one on your local disk which you can push your changes into (so that other people can see them) or pull from (so that you can get others changes). The command git remote add origin git@github.com:peter/first_app.gitcreates a new remote called origin located at git@github.com:peter/first_app.git. Once you do this, in your push commands, you can push to origin instead of typing out the whole URL.
+
+    What is git push origin master
+
+    This is a command that says "push the commits in the local branch named master to the remote named origin". Once this is executed, all the stuff that you last synchronised with origin will be sent to the remote repository and other people will be able to see them there.
+
+
+
+SET UP
+    Fork this assignment repository on gitlab.
+    Share your fork on gitlab with your lab tutor as reporter.
+    Use git clone https://gitlab.cecs.anu.edu.au/uXXXXXXXX/comp1100-2016-assignment2.git (where uXXXXXXXX is your ANU id) from your personal workspace (on the lab machines or on your personal computer) to clone a working copy of the repository in which to develop your code.
+    From within your cloned folder in your personal workspace (on the lab machines or on your personal computer) use the command git remote add assignment https://gitlab.cecs.anu.edu.au/comp1100-2016/comp1100-2016-assignment2.git to allow you to pull upstream updates from the main assignment repository.
+
+
+SUBMIT
+
+git add .
+git commit -a -m "<your commit message here>"
+git push
